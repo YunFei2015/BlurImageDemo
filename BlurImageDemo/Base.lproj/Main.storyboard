@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pxY-a2-7T1">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lG6-M0-wf1">
+                                <rect key="frame" x="20" y="224" width="374" height="40"/>
+                                <color key="backgroundColor" red="0.039847857705995263" green="0.80000001192092896" blue="0.19329505124550009" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="G8g-C5-JTu"/>
+                                </constraints>
+                                <state key="normal" title="Core Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="puZ-mp-jOS" kind="show" id="tiB-8A-uWc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZj-gR-n89">
+                                <rect key="frame" x="20" y="441" width="374" height="40"/>
+                                <color key="backgroundColor" red="0.039847857709999997" green="0.80000001190000003" blue="0.19329505120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="hS7-2I-GNZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="q96-Zs-ECr"/>
+                                </constraints>
+                                <state key="normal" title="vImage">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="nzx-Sx-XRr" kind="show" id="JVW-bW-jGc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lG6-M0-wf1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="160" id="8WF-le-7VX"/>
+                            <constraint firstItem="GZj-gR-n89" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="TAp-HG-sOn"/>
+                            <constraint firstAttribute="trailing" secondItem="GZj-gR-n89" secondAttribute="trailing" constant="20" id="V0J-a2-3RQ"/>
+                            <constraint firstItem="lG6-M0-wf1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="iL9-1L-uSb"/>
+                            <constraint firstAttribute="trailing" secondItem="lG6-M0-wf1" secondAttribute="trailing" constant="20" id="pkD-ea-2JT"/>
+                            <constraint firstItem="GZj-gR-n89" firstAttribute="top" secondItem="lG6-M0-wf1" secondAttribute="bottom" constant="177" id="sty-Mr-EEa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jbr-Fh-hBc"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="349"/>
+        </scene>
+        <!--Blur WithV ImageVC-->
+        <scene sceneID="UpY-kG-NHk">
+            <objects>
+                <viewController id="nzx-Sx-XRr" customClass="BlurWithVImageVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FBS-ZT-9Ut"/>
+                        <viewControllerLayoutGuide type="bottom" id="beL-ib-Sge"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pqQ-t3-9Do">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UnC-ti-swi">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOG-hg-NyX">
+                                <rect key="frame" x="151" y="686" width="111" height="30"/>
+                                <color key="backgroundColor" red="0.039847857709999997" green="0.80000001190000003" blue="0.19329505120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="添加滤镜">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addFilterCategory:" destination="puZ-mp-jOS" eventType="touchUpInside" id="b6y-4b-vpJ"/>
+                                    <action selector="addFilterOnImage:" destination="nzx-Sx-XRr" eventType="touchUpInside" id="FJU-l0-fVT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0a-0j-lTZ">
+                                <rect key="frame" x="20" y="686" width="111" height="30"/>
+                                <color key="backgroundColor" red="0.039847857709999997" green="0.80000001190000003" blue="0.19329505120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="选取图片">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="selectImage:" destination="nzx-Sx-XRr" eventType="touchUpInside" id="S3L-lU-tII"/>
+                                    <action selector="selectImage:" destination="puZ-mp-jOS" eventType="touchUpInside" id="kkb-mk-BZ4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaZ-S2-6rQ">
+                                <rect key="frame" x="282" y="686" width="111" height="30"/>
+                                <color key="backgroundColor" red="0.039847857709999997" green="0.80000001190000003" blue="0.19329505120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="保存图片">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveImage:" destination="puZ-mp-jOS" eventType="touchUpInside" id="ARb-4b-xE5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UnC-ti-swi" firstAttribute="leading" secondItem="pqQ-t3-9Do" secondAttribute="leading" id="4MD-5b-CWz"/>
+                            <constraint firstItem="uaZ-S2-6rQ" firstAttribute="width" secondItem="m0a-0j-lTZ" secondAttribute="width" id="Bi2-Eg-3y2"/>
+                            <constraint firstItem="UnC-ti-swi" firstAttribute="top" secondItem="FBS-ZT-9Ut" secondAttribute="bottom" id="IlK-IK-Uac"/>
+                            <constraint firstItem="LOG-hg-NyX" firstAttribute="leading" secondItem="m0a-0j-lTZ" secondAttribute="trailing" constant="20" id="VLl-nl-5N3"/>
+                            <constraint firstItem="LOG-hg-NyX" firstAttribute="width" secondItem="m0a-0j-lTZ" secondAttribute="width" id="aZE-gh-mUB"/>
+                            <constraint firstItem="uaZ-S2-6rQ" firstAttribute="bottom" secondItem="LOG-hg-NyX" secondAttribute="bottom" id="bdC-GV-EyO"/>
+                            <constraint firstItem="beL-ib-Sge" firstAttribute="top" secondItem="UnC-ti-swi" secondAttribute="bottom" id="eqV-n4-KAI"/>
+                            <constraint firstItem="beL-ib-Sge" firstAttribute="top" secondItem="m0a-0j-lTZ" secondAttribute="bottom" constant="20" id="gbN-hU-XQt"/>
+                            <constraint firstAttribute="trailing" secondItem="UnC-ti-swi" secondAttribute="trailing" id="kYs-Sk-hvE"/>
+                            <constraint firstItem="m0a-0j-lTZ" firstAttribute="leading" secondItem="pqQ-t3-9Do" secondAttribute="leading" constant="20" id="kj6-Pt-1aW"/>
+                            <constraint firstItem="LOG-hg-NyX" firstAttribute="bottom" secondItem="m0a-0j-lTZ" secondAttribute="bottom" id="klZ-VC-3db"/>
+                            <constraint firstItem="m0a-0j-lTZ" firstAttribute="width" secondItem="pqQ-t3-9Do" secondAttribute="width" multiplier="1:3" constant="-27" id="uqT-dt-KD8"/>
+                            <constraint firstItem="uaZ-S2-6rQ" firstAttribute="leading" secondItem="LOG-hg-NyX" secondAttribute="trailing" constant="20" id="xuM-5U-emV"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="myImageView" destination="UnC-ti-swi" id="jdM-Xw-w7m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dIf-Yf-r53" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="1233"/>
+        </scene>
+        <!--Blur With Core ImageVC-->
+        <scene sceneID="tKv-vc-78w">
+            <objects>
+                <viewController id="puZ-mp-jOS" customClass="BlurWithCoreImageVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lqk-Sn-4yg"/>
+                        <viewControllerLayoutGuide type="bottom" id="QBW-WU-ihP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t7e-iY-Occ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aNd-jZ-l4D">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2W-zd-KB7">
+                                <rect key="frame" x="151" y="686" width="111" height="30"/>
+                                <color key="backgroundColor" red="0.039847857709999997" green="0.80000001190000003" blue="0.19329505120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="添加滤镜">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addFilterCategory:" destination="puZ-mp-jOS" eventType="touchUpInside" id="xCa-Kh-ZMb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPh-aP-8dR">
+                                <rect key="frame" x="20" y="686" width="111" height="30"/>
+                                <color key="backgroundColor" red="0.039847857709999997" green="0.80000001190000003" blue="0.19329505120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="选取图片">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="selectImage:" destination="puZ-mp-jOS" eventType="touchUpInside" id="4ic-88-VZx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8J-kQ-0pD">
+                                <rect key="frame" x="282" y="686" width="111" height="30"/>
+                                <color key="backgroundColor" red="0.039847857709999997" green="0.80000001190000003" blue="0.19329505120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="保存图片">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveImage:" destination="puZ-mp-jOS" eventType="touchUpInside" id="Q09-ek-kuz"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xtg-az-aMn">
+                                <rect key="frame" x="0.0" y="678" width="414" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="TFw-vT-J24"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="puZ-mp-jOS" id="RfT-Nv-4s9"/>
+                                    <outlet property="delegate" destination="puZ-mp-jOS" id="YQ3-7B-ZtP"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DPh-aP-8dR" firstAttribute="centerX" secondItem="t7e-iY-Occ" secondAttribute="centerX" id="EfF-RG-aDo"/>
+                            <constraint firstItem="l8J-kQ-0pD" firstAttribute="top" secondItem="Xtg-az-aMn" secondAttribute="bottom" constant="8" id="EnI-qR-Syg"/>
+                            <constraint firstItem="Xtg-az-aMn" firstAttribute="leading" secondItem="t7e-iY-Occ" secondAttribute="leading" id="FYn-cF-ixR"/>
+                            <constraint firstItem="P2W-zd-KB7" firstAttribute="bottom" secondItem="DPh-aP-8dR" secondAttribute="bottom" id="Hc4-0H-U9O"/>
+                            <constraint firstItem="DPh-aP-8dR" firstAttribute="leading" secondItem="t7e-iY-Occ" secondAttribute="leading" constant="20" id="L0E-of-TDG"/>
+                            <constraint firstItem="aNd-jZ-l4D" firstAttribute="leading" secondItem="t7e-iY-Occ" secondAttribute="leading" id="Lrz-Mr-ac8"/>
+                            <constraint firstAttribute="trailing" secondItem="Xtg-az-aMn" secondAttribute="trailing" id="N8X-w4-L61"/>
+                            <constraint firstItem="aNd-jZ-l4D" firstAttribute="top" secondItem="Lqk-Sn-4yg" secondAttribute="bottom" id="PCC-12-vaw"/>
+                            <constraint firstItem="P2W-zd-KB7" firstAttribute="width" secondItem="DPh-aP-8dR" secondAttribute="width" id="QeZ-A8-ppW"/>
+                            <constraint firstItem="QBW-WU-ihP" firstAttribute="top" secondItem="DPh-aP-8dR" secondAttribute="bottom" constant="20" id="TKL-wE-O2Y"/>
+                            <constraint firstItem="l8J-kQ-0pD" firstAttribute="leading" secondItem="P2W-zd-KB7" secondAttribute="trailing" constant="20" id="TgA-fm-D7b"/>
+                            <constraint firstItem="P2W-zd-KB7" firstAttribute="leading" secondItem="DPh-aP-8dR" secondAttribute="trailing" constant="20" id="YNA-6k-weP"/>
+                            <constraint firstItem="l8J-kQ-0pD" firstAttribute="bottom" secondItem="P2W-zd-KB7" secondAttribute="bottom" id="bzQ-QC-5AR"/>
+                            <constraint firstItem="QBW-WU-ihP" firstAttribute="top" secondItem="aNd-jZ-l4D" secondAttribute="bottom" id="gYl-bE-8YB"/>
+                            <constraint firstItem="DPh-aP-8dR" firstAttribute="width" secondItem="t7e-iY-Occ" secondAttribute="width" multiplier="1:3" constant="-27" id="iNh-Ga-zfp"/>
+                            <constraint firstAttribute="trailing" secondItem="aNd-jZ-l4D" secondAttribute="trailing" id="s3B-9r-08d"/>
+                            <constraint firstItem="l8J-kQ-0pD" firstAttribute="width" secondItem="DPh-aP-8dR" secondAttribute="width" id="sGB-eS-s5E"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EfF-RG-aDo"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="filterPickerViewHeightConstrain" destination="TFw-vT-J24" id="c1H-EM-TpF"/>
+                        <outlet property="myImageView" destination="aNd-jZ-l4D" id="TzP-Vt-GKo"/>
+                        <outlet property="pickerView" destination="Xtg-az-aMn" id="37k-hm-8S8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k6w-Ma-YT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1568" y="349"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="29a-1J-eRb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pxY-a2-7T1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L71-87-mfJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9CT-UC-fkA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SL5-YH-2T0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="381" y="-411"/>
+        </scene>
+    </scenes>
+</document>
